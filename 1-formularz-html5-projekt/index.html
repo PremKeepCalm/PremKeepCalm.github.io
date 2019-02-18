@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>1-formularz-html5</title>
+</head>
+<body>
+    <form action="https://formspree.io/przem.kacz7@hmail.com" method="POST">
+        <label for="name">Imię:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="surname">Nazwisko:</label>
+        <input type="text" name="surname" id="surname">
+
+        <label for="mail">E-mail:</label>
+        <input type="email" name="mail" id="mail">
+
+        <label for="phone">Telefon:</label>
+        <input type="number" name="phone" id="phone"><br>
+
+        <label for="city">Wybór miasta:</label>
+        <select name="select" id="city">
+            <option value="warszawa">Warszawa</option>
+            <option value="poznan">Poznań</option>
+            <option value="wroclaw">Wrocław</option>
+        </select>
+        <p>Płeć:</p>
+        <input type="radio" name="gender" id="female">Kobieta
+        <input type="radio" name="gender" id="male">Mężczyzna <br>
+        <label for="agreement">Zgoda na dane osobowe</label>
+        <input type="checkbox" name="agreement" id="agreement">
+        <br>
+        <br>
+        <label for="massege">Wiadomość:</label>
+        <br>
+        <textarea name="massege" id="massege" cols="30" rows="8"></textarea>
+        <br>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
